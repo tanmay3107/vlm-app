@@ -18,8 +18,7 @@ uploaded_file = st.file_uploader("Upload an image (JPG/PNG)", type=["jpg", "jpeg
 
 if uploaded_file is not None:
     # Display the image on the web page
-    st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
-    
+    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)    
     # 4. Text Input for the Prompt
     user_prompt = st.text_input("Ask a question about this image:", "Describe exactly what you see in this image.")
     
