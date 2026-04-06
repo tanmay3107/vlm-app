@@ -16,7 +16,7 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 # 2. Setup the image and prompt
-image_filename = "test.jpg"  # Make sure this image is in your folder!
+image_filename = "test.jpeg"  # Make sure this image is in your folder!
 user_prompt = "Describe exactly what you see in this image."
 
 try:
